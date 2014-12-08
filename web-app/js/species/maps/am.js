@@ -5,8 +5,7 @@ function getHost() {
 }
 
 function getGeoserverHost() {
-    //return window.params.map.geoserverHost;
-    return 'biodiversity.bt';
+    return window.params.map.geoserverHost;
 }
 
 function getWorkspace() {
