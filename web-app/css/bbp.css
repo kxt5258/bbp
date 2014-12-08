@@ -337,3 +337,7 @@ h2{
     width: 910px !Important;
 }
 
+/* BACKGROUND COlor of Caosel latest observations */
+#home .navblock .sidebar_section {
+    background-color: #aaa !important;
+}

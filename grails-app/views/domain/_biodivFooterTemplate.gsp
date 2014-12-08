@@ -24,30 +24,30 @@
 		</div>
 		<div class="links_box_column">
 			<ul>
-				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/aboutus'>The Portal</a></li>
-				<li style="width:200px;"><a href="${ '/theportal'}" >Biodiversity Of Bhutan</a>
+				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/bbp/aboutus'>The Portal</a></li>
+				<li style="width:200px;"><a href="${ '/bbp/theportal'}" >Biodiversity Of Bhutan</a>
 				</li>
-				<li><a href="${ '/technology'}">Technology</a></li>
-				<li><a href="${ '/faq'}">FAQ</a></li>
+				<li><a href="${ '/bbp/technology'}">Technology</a></li>
+				<li><a href="${ '/bbp/faq'}">FAQ</a></li>
 
 			</ul>
 		</div>
 		<div class="links_box_column">
 			<ul>
-				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/people'>People</a></li>
-				<li><a href="${ '/partners'}">Partners</a></li>
-				<li><a href="${ '/donors'}">Donors</a></li>
-				<li><a href="${ '/team'}">Team</a></li>
+				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/bbp/people'>People</a></li>
+				<li><a href="${ '/bbp/partners'}">Partners</a></li>
+				<li><a href="${ '/bbp/donors'}">Donors</a></li>
+				<li><a href="${ '/bbp/team'}">Team</a></li>
 			</ul>
 		</div>
 
 		<div class="links_box_column">
 			<ul>
-				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/policy'>Policy</a>
+				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/bbp/policy'>Policy</a>
 				</li>
-				<li><a href="${ '/datasharing'}">Data Sharing</a>
+				<li><a href="${ '/bbp/datasharing'}">Data Sharing</a>
 				</li>
-				<li><a href="${ '/license'}">Licenses</a>
+				<li><a href="${ '/bbp/license'}">Licenses</a>
 				</li>
 
 			</ul>
@@ -55,9 +55,9 @@
 		<div class="links_box_column">
 			<ul>
 				<li class="nav-header bold" style="padding-left: 0px;">Others</li>
-				<li><a href="${ '/feedback'}">Feedback</a>
+				<li><a href="${ '/bbp/feedback'}">Feedback</a>
 				</li>
-				<li><a href="${ '/contactus'}">Contact Us</a>
+				<li><a href="${ '/bbp/contactus'}">Contact Us</a>
 				</li>
 
 			</ul>

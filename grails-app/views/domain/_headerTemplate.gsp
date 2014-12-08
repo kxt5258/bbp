@@ -164,14 +164,18 @@
 					</li>
 
 					<!--li class="menu-449 first"><a href="/" title="">Home</a></li-->
-					<li class="${(params.action == 'pages')?' active':''}"><a
+					<!-- <li class="${(params.action == 'pages')?' active':''}"><a
 								href="${uGroup.createLink(mapping:"pages", controller:"userGroup", 'action':"pages")}"
 								title="${g.message(code:'default.pages.label')}"><g:message code="default.pages.label" /></a>
-					</li>
+					</li>-->
 					
 					<li
-						class="${(request.getHeader('referer')?.contains('/about') && params.action == 'header')?' active':''}"><a
-						href="/theportal" title="${g.message(code:'button.about.us')}" > <g:message code="button.about.us" /> </a></li>
+						class="${(request.getHeader('referer')?.contains('/group/list') && params.action == 'header')?' active':''}"><a
+						href="/group/list" title="Groups" > Groups </a></li>
+					
+                    <li
+						class="${(request.getHeader('referer')?.contains('/bbp') && params.action == 'header')?' active':''}"><a
+						href="/bbp/aboutus" title="${g.message(code:'button.about.us')}" > <g:message code="button.about.us" /> </a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown"> <g:message code="link.moree" /> <b class="caret"></b> </a>
 

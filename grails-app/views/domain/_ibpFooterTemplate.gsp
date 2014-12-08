@@ -28,8 +28,8 @@
 				<li class="nav-header bold"  style="padding-left: 0px;"><a href='/theportal'><g:message code="link.the.portal" /></a></li>
 				<li><a href="${ '/biodiversity_in_india'}"><g:message code="link.biodiversity.india" /></a>
 				</li>
-				<li><a href="${ '/about/whats-new'}"><g:message code="link.what.new" /></a></li>
-				<li><a href="${ '/about/technology'}"><g:message code="link.technology" /></a></li>
+				<li><a href="${ '/bbp/whats-new'}"><g:message code="link.what.new" /></a></li>
+				<li><a href="${ '/bbp/technology'}"><g:message code="link.technology" /></a></li>
 				<li><a href="${ '/help/faqs'}"><g:message code="link.faq" /></a></li>
 
 			</ul>

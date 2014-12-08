@@ -41,7 +41,8 @@
         }
 %>
 
-<select class="languageComboBox combobox" style="display:none;" data-defaultlanguage="${species_sn_lang}" >
+<!--<select class="languageComboBox combobox" style="display:none;" data-defaultlanguage="${species_sn_lang}" >-->
+<select class="languageComboBox combobox" style="display:none;" >
     <option></option>
     <g:each in="${Language.filteredList()}">
         <option value="${it}"> ${it}</option>

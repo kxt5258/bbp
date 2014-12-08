@@ -16,7 +16,7 @@
 			Coming soon!
 			</div>
 			 <div class="staticnav"><g:render template="/portal/sidenavigation" /> </div> 
-			<!-- End of Write Up for ABout Us Page -->
+			<!-- End of Write Up for Technology -->
 	</div>
 </body>
 </html>
