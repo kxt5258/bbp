@@ -33,11 +33,14 @@ class Language {
 			lang = Language.findByNameIlike(languageName.trim());
 			if(!lang){
 				//inserting new language
-				lang = new Language(name:languageName.trim(), threeLetterCode:_getThreeLetterCode(languageName), isDirty:true);
-				if(!lang.save(flush:true)){
+				//FOR BBP, We dont need any new Language since all the languages of Bhutan are given as  choice
+                //If NO Lnguage selected, give english as default
+                //lang = new Language(name:languageName.trim(), threeLetterCode:_getThreeLetterCode(languageName), isDirty:true);
+				//if(!lang.save(flush:true)){
 					//println "Error during new language save $languageName"
-					lang = null;
-				}
+					//lang = null;
+				//}
+			    lang = Language.findByNameIlike(DEFAULT_LANGUAGE);
 			}
 		}
 		return lang;

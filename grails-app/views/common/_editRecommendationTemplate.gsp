@@ -44,7 +44,7 @@
                         class="input-block-level ${hasErrors(bean: recommendationInstance, field: 'name', 'errors')} ${hasErrors(bean: recommendationVoteInstance, field: 'recommendation', 'errors')}" />
                     <input type="hidden" class="mappedRecoNameForcanName" />
 
-                    <div style="width:90px;">
+                    <div style="width:150px;">
                         <s:chooseLanguage />
                     </div>
                     <div class='nameSuggestions' style='display: block;'></div>

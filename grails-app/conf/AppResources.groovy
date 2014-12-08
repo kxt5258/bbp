@@ -47,7 +47,7 @@ modules = {
 		resource url:'/css/bootstrap-editable.css'
 		resource url:'/css/biodiv.css'
 		resource url:"/css/${org.codehaus.groovy.grails.commons.ConfigurationHolder.config.speciesPortal.app.siteCode}.css"
-
+		resource url:'/css/bbp.css'
 
 		resource url:'/bootstrap/js/bootstrap.min.js'
 		resource url:'/js/bootstrap-multiselect.js'
@@ -182,6 +182,7 @@ modules = {
 		resource url:'/js/species/speciesfield.js'
 		resource url:'/js/species/taxonhierarchy.js'
 		resource url:'/js/species/species.js'
+		resource url:'/css/bbp.css'
 	}
 
 	species_show {
@@ -376,5 +377,9 @@ modules = {
 		resource url:'/js/species/maps/map-search.js'
 		resource url:'/js/species/maps/mapapp.js'
 		resource url:'/js/species/maps/cookie-chef.js'
+    }
+
+    accordion {
+        resource url:'/js/accordion.js'
     }
 }
