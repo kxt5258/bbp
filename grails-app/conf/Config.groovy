@@ -878,7 +878,7 @@ environments {
             }
         }
 
-        ibp.domain=servername
+        ibp.domain="${servername}"
         wgp.domain="thewesternghats.${servername}" 
 		
 		grails.plugin.springsecurity.successHandler.defaultTargetUrl = "/"

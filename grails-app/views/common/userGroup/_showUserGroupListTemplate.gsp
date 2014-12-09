@@ -12,7 +12,7 @@
 				def userGroupPos = (queryParams?.offset != null) ? queryParams.offset : (params?.offset != null) ? params.offset : 0
 			%>
 			
-			<table class="table table-hover span8" style="margin-left: 0px;">
+			<table class="table table-hover span8" style="margin-left: 0px; width: 100%;">
 				<thead>
 					<tr>
 						<th style="width:20%"><g:message code="default.groups.label" /></th>

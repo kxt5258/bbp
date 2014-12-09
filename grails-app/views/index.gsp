@@ -51,7 +51,7 @@
                   <li id="maps"><a href="/map"><div class="textoverlay">24 Map layers</div></a></li>
                   <li id="documents"><a href="/document/list"><div class="textoverlay">${Document.count()} Documents</div></a></li>
                   <li id="groups"><a href="/group/list"><div class="textoverlay">${UserGroup.count()} User Groups</div></a></li>
-                  <li id="about-us"><a href="/activityFeed/list"><div class="textoverlay">${ActivityFeed.count()} User Activities</div></a></li>
+                  <li id="about-us"><a href="/bbp/aboutus"><div class="textoverlay">${ActivityFeed.count()} User Activities</div></a></li>
                </ul>          
           </div>
             <div class="navblock" style="margin-top:20px;">
