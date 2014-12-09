@@ -341,3 +341,36 @@ h2{
 #home .navblock .sidebar_section {
     background-color: #aaa !important;
 }
+
+/*********TEXT Overlay for the Front Page Accordions *********/
+#thumbsList {
+    margin: 0px;
+    padding: 0px;
+    }
+
+#thumbsList li {
+    position: relative;
+    list-style: none;
+    float: left;
+    background-color: gainsboro;
+    }
+
+#thumbsList li:hover a .textoverlay {
+    display: block;
+    color: #8CA643;
+    font-weight:bold;
+    text-indent: 0px !important;
+    }
+
+.textoverlay { 
+    display: none; 
+    text-align: center; 
+    padding-top: 10px;
+    z-index: 2; 
+    height: 30px; 
+    width: 100%; 
+    position: absolute; 
+    background-color: rgba(69, 68, 68, 0.97) !important;
+    bottom: 0;
+    }
+

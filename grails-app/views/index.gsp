@@ -45,14 +45,14 @@
                                                                                                                                                            <br />
                                                                                                                                                          </div>  
           <div class="accordion">
-            <ul>
-                <li id="species"><a href="species/index">Species ${Species.countByPercentOfInfoGreaterThan(0)}</a></li>
-                <li id="observations"><a href="observation/index">Observations ${Observation.countObservations()}</a></li>
-                <li id="maps"><a href="map">Maps 14</a></li>
-                <li id="documents"><a href="document/list">Documents ${Document.count()}</a></li>
-                <li id="groups"><a href="group/list">Groups ${UserGroup.count()}</a></li>
-                <li id="about-us"><a href="aboutus">About Us ${ActivityFeed.count()}</a></li>
-            </ul>
+              <ul id="thumbsList">
+                  <li id="species"><a href="/species"><div class="textoverlay">${Species.countByPercentOfInfoGreaterThan(0)} Species Pages</div></a></li>
+                  <li id="observations"><a href="/observation"><div class="textoverlay">${Observation.countObservations()} Observations</div></a></li>
+                  <li id="maps"><a href="/map"><div class="textoverlay">24 Map layers</div></a></li>
+                  <li id="documents"><a href="/document/list"><div class="textoverlay">${Document.count()} Documents</div></a></li>
+                  <li id="groups"><a href="/group/list"><div class="textoverlay">${UserGroup.count()} User Groups</div></a></li>
+                  <li id="about-us"><a href="/activityFeed/list"><div class="textoverlay">${ActivityFeed.count()} User Activities</div></a></li>
+               </ul>          
           </div>
             <div class="navblock" style="margin-top:20px;">
                 <b><big>&nbsp;<a name="latestObservations"><g:message code="index.button.latest.observations" /></a></big></b>
