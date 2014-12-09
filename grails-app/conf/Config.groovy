@@ -165,24 +165,26 @@ else {
 
 
 speciesPortal {
-    app.siteName = "India Biodiversity Portal"
-    app.siteDescription = "Welcome to the ${app.siteName} - A repository of information designed to harness and disseminate collective intelligence on the biodiversity of the Indian subcontinent."
+    app.siteName = "Bhutan Biodiversity Portal"
+    app.siteDescription = "Welcome to the ${app.siteName} - A repository of information designed to harness and disseminate collective intelligence on the biodiversity of Bhutan."
     app.homepageDescription = "A unique repository of information on India's biodiversity. The Portal aims to provide open and free access to biodiversity information. The portal enables widespread participation by all citizens in contributing to and accessing information on Indian biodiversity. We believe such open access benefits science and society, and contributes to sustainable future. Your participation is vital. We welcome your participation and feedback."
-    app.siteCode = 'ibp'
+    app.siteCode = "${appName}"
 
-    app.twitterUrl = "https://twitter.com/inbiodiversity"
-    app.facebookUrl = "https://www.facebook.com/indiabiodiversity"
-    app.feedbackFormUrl = "http://indiabiodiversity.org/feedback_form"
-	app.googlePlusUrl = "https://plus.google.com/110731547233656611783"
+    app.twitterUrl = "https://twitter.com/bhutanbiodiversity"
+    app.facebookUrl = "https://www.facebook.com/bhutanbiodiversityportal"
+    app.feedbackFormUrl = "http://indiabiodiversity.org/bbp/contactus"
+	app.googlePlusUrl = "https://plus.google.com/"
 
-	app.rootDir = "${userHome}/git/biodiv/app-conf"
+	app.rootDir = "${userHome}/bbp/app-conf"
 	data.rootDir = "${app.rootDir}/data"
 	download.rootDir = "${data.rootDir}/datarep/downloads"
  
-    app.logo = "logo/IBP.png"
-    app.favicon = "logo/favicon.png"
+    app.logo = "${appName}/images/bbp-logo.png"
+    app.favicon = "${appName}/images/favicon.ico"
+    app.govlogo = "${appName}/images/gov-logo.png"
+    app.dzongkha = "${appName}/images/accordion/dzongkha.png"
    
-    app.notifiers_bcc = ["prabha.prabhakar@gmail.com", "thomas.vee@gmail.com", "rohitmg@gmail.com", "balachandert@gmail.com"]
+    app.notifiers_bcc = ["moafbhutan@gmail.com", "sdema06@gmail.com"]
 
 	species {
 		speciesDownloadDir = "${download.rootDir}/species"
@@ -190,7 +192,7 @@ speciesPortal {
 	domain = "localhost"
 	resources {
 		rootDir = "${app.rootDir}/img"
-		serverURL = "http://indiabiodiversity.localhost.org/${appName}/img"
+		serverURL = "http://bbptest.bt/${appName}/img"
 		images {
 			defaultType = "jpg"
 			thumbnail {
@@ -215,13 +217,13 @@ speciesPortal {
 	observations {
 		rootDir = "${app.rootDir}/observations"
 		observationDownloadDir = "${download.rootDir}/observations"
-		serverURL = "http://indiabiodiversity.localhost.org/${appName}/observations"
+		serverURL = "http://bbptest.bt/${appName}/observations"
 		//serverURL = "http://localhost/${appName}/observations"
 		MAX_IMAGE_SIZE = 104857600
 	} 
 	 userGroups {
 		rootDir = "${app.rootDir}/userGroups"
-		serverURL = "http://indiabiodiversity.localhost.org/${appName}/userGroups"
+		serverURL = "http://bbptest.bt/${appName}/userGroups"
 		//serverURL = "http://localhost/${appName}/userGroups"
 		logo {
 			MAX_IMAGE_SIZE = 51200
@@ -230,7 +232,7 @@ speciesPortal {
 
 	users {
 		rootDir = "${app.rootDir}/users"
-		serverURL = "http://localhost/${appName}/users"
+		serverURL = "htttp://bbptest.bt/${appName}/users"
 		logo {
 			MAX_IMAGE_SIZE = 2097000
 		}
@@ -238,7 +240,7 @@ speciesPortal {
 	
 	checklist{
 		rootDir = "${app.rootDir}/checklist"
-		serverURL = "http://localhost/${appName}/checklist"
+		serverURL = "http://bbptest.bt/${appName}/checklist"
 		checklistDownloadDir = "${download.rootDir}/checklist"
 	}
 
@@ -249,7 +251,7 @@ speciesPortal {
 
 	content{
 		rootDir = "${app.rootDir}/content"
-		serverURL = "http://localhost/${appName}/content"
+		serverURL = "http://bbptest.bt/${appName}/content"
 		MAX_DOC_SIZE = 50*1024*1024 //10 mb
 		MAX_IMG_SIZE = 2*1024*1024 // 2mb
 	}	
@@ -441,7 +443,7 @@ speciesPortal {
 	flushImmediately = true
     usersResource {
         rootDir = "${app.rootDir}/usersRes"
-		serverURL = "http://indiabiodiversity.localhost.org/${appName}/usersRes"   
+		serverURL = "http://bbptest.bt/${appName}/usersRes"   
     }
     
     ibpMapDatabase {
@@ -458,7 +460,8 @@ speciesPortal {
 
 speciesPortal.validCrossDomainOrigins = [
 	"localhost",
-	"wgp.saturn.strandls.com",
+	"bbptest.bt",
+    "wgp.saturn.strandls.com",
 	"wgp.pamba.strandls.com",
 	"ibp.saturn.strandls.com",
 	"ibp.pamba.strandls.com"
@@ -470,9 +473,9 @@ jpegOptimProg = "/usr/bin/jpegoptim";
 
 environments {
     development {
-        grails.serverURL = "http://indiabiodiversity.localhost.org/${appName}"
+        grails.serverURL = "http://bbptest.bt/${appName}"
         speciesPortal {
-	        app.rootDir = "${userHome}/git/biodiv/app-conf"
+	        app.rootDir = "${userHome}/bbp/app-conf"
             search.serverURL = "http://localhost:8090/solr"
             names.parser.serverURL = "10.0.0.10"
         }
@@ -481,11 +484,17 @@ environments {
 
         grails {
             mail {
-                host = "127.0.0.1"
-                port = 25
+			 host = "smtp.gmail.com"
+			 port = 465
+			 username = "kinleygrails@gmail.com"
+			 password = "Fl0w3rs123"
+			 props = ["mail.smtp.auth":"true", 					   
+			          "mail.smtp.socketFactory.port":"465",
+			          "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+			          "mail.smtp.socketFactory.fallback":"false"]
             }
         }
-        ibp.domain='indiabiodiversity.localhost.org'
+        ibp.domain='bbptest.bt'
         wgp.domain='thewesternghats.indiabiodiversity.localhost.org'
         //grails.resources.debug=true
         grails.resources.mappers.hashandcache.excludes = ['**']
@@ -950,7 +959,7 @@ environments {
        }
 	}
 	kk {
-		servername = 'indiabiodiversity.org'
+		servername = 'biodiversity.bt'
 		grails.serverURL = "http://${servername}/${appName}"
 		
         speciesPortal {
@@ -1168,8 +1177,8 @@ grails.plugin.springsecurity.facebook.domain.classname='species.auth.FacebookUse
 grails.taggable.tag.autoImport=true
 grails.taggable.tagLink.autoImport=true
 
-grails.mail.default.from="notification@indiabiodiversity.org"
-emailConfirmation.from="notification@indiabiodiversity.org"
+grails.mail.default.from="notification@biodiversity.bt"
+emailConfirmation.from="notification@biodiversity.bt"
 
 grails.plugin.springsecurity.password.algorithm = 'MD5'
 grails.plugin.springsecurity.password.hash.iterations = 1
@@ -1181,7 +1190,7 @@ grails.plugin.springsecurity.ui.register.postRegisterUrl  = "${grails.serverURL}
 grails.plugin.springsecurity.ui.register.defaultRoleNames = ['ROLE_USER']
 
 //grails.plugin.springsecurity.ui.notification.emailFrom = 'notification@indiabiodiversity.org'
-grails.plugin.springsecurity.ui.notification.emailReplyTo = "prabha.prabhakar@gmail.com";
+grails.plugin.springsecurity.ui.notification.emailReplyTo = "kxt5258@gmail.com";
 
 grails.plugin.springsecurity.ui.register.emailBody = '''Hi $username,<br/><br/>You (or someone pretending to be you) created an account with this email address.<br/><br/>If you made the request, please click <a href="$url">here</a> to finish the registration and activate your account.'''
 //grails.plugin.springsecurity.ui.register.emailFrom = 'notification@indiabiodiversity.org'

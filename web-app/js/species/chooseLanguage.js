@@ -23,7 +23,7 @@ function initializeLanguage(){
         var langCombo = value;
         doCustomization(langCombo);
         var defaultLang = $(value).data("defaultlanguage");
-        langCombo.val("Language");
+        langCombo.val(defaultLang).attr("selected",true);
         langCombo.data('combobox').refresh();
     });
 }
