@@ -25,10 +25,6 @@
 
 			<p>Fax: +975-2-351219</p>
 
-			<p>Email: info [at] biodiversity.bt</p>
-
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; support [at] biodiversity.bt</p>
-
 			<p>&nbsp;</p>
 			<p>For any technical feedback, please contact Mr. Kinley Tshering at ktshering [at] moaf.gov.bt<br /> <br />For any content feedback, please contact Ms. Sangay Dema at sangaydema [at] moaf.gov.bt<br /> <br />Or write to us on our <a href="https://www.facebook.com/bhutanbiodiversityportal">facebook wall</a></p>
 
