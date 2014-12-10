@@ -14,7 +14,7 @@
 .combobox-container .add-on {
 	position: absolute;
     height: 20px;
-    left:70px;
+    left:120px;
 }
 
 .combobox-container .caret {
@@ -41,8 +41,7 @@
         }
 %>
 
-<!--<select class="languageComboBox combobox" style="display:none;" data-defaultlanguage="${species_sn_lang}" >-->
-<select class="languageComboBox combobox" style="display:none;" >
+<select class="languageComboBox combobox" style="display:none;" data-defaultlanguage="${species_sn_lang}" >
     <option></option>
     <g:each in="${Language.filteredList()}">
         <option value="${it}"> ${it}</option>

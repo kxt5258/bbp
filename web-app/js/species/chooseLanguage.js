@@ -6,6 +6,8 @@ function doCustomization(langCombo){
     inputTextEle.attr('name', 'languageName');
     inputTextEle.attr('autocomplete', 'off');
     inputTextEle.on('blur', $.proxy(myBlur, langCombo.data('combobox')));
+    inputTextEle.attr('placeholder', 'Choose Language');
+    inputTextEle.width(120);
 }
 
 function myBlur(e){
@@ -23,7 +25,7 @@ function initializeLanguage(){
         var langCombo = value;
         doCustomization(langCombo);
         var defaultLang = $(value).data("defaultlanguage");
-        langCombo.val(defaultLang).attr("selected",true);
+        //langCombo.val(defaultLang).attr("selected",true);
         langCombo.data('combobox').refresh();
     });
 }
