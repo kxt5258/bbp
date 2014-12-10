@@ -63,4 +63,9 @@ class Language {
 	public static filteredList(){
 		return Language.findAllByIsDirtyOrRegionIsNotNull(true).collect{it.name;} ;
 	}
+
+    //List of all languages to be used for common name
+    public static allLanguages(){
+        return Language.getAll().collect{it.name;} ;
+    }
 }
