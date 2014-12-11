@@ -374,5 +374,10 @@ h2{
     bottom: 0;
     }
 
+/******* Keep menu of maps intact *****/
+.navbar-static-top  .navbar-inner .container {
+    width: 940px;
+    }
+
 
 
