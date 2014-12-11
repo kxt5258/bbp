@@ -13,7 +13,6 @@
 			<!--Write up for About Us Page -->
 			<div class="writeup">
 <h2> Frequently Asked Questions</h2>
-			Coming soon!
 			</div>
 			 <div class="staticnav"><g:render template="/portal/sidenavigation" /> </div> 
 			<!-- End of Write Up for ABout Us Page -->

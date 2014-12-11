@@ -1778,7 +1778,7 @@ function updateLayersList(tag) {
         var j;
         for (j = 0; j < layers.length; j += 1) {
             var layer = layers[j].name;
-            document.getElementById(layer).style.display = 'none';
+            document.getElementById(layer).style.display = 'block';
 
         }
 
