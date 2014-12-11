@@ -1219,7 +1219,7 @@ function AugmentedMap(map_div, options) {
         if (features_list_panel_enabled) {
             var oXmlParser = new DOMParser();
             var oXmlDoc = oXmlParser.parseFromString( text, "text/xml" ); 
-            var arrFeatures = oXmlDoc.getElementsByTagName("ibp:state"); 
+            var arrFeatures = oXmlDoc.getElementsByTagName("bbp:state"); 
             var featuresList = [];
 
             for (var i in arrFeatures){
