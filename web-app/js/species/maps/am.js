@@ -1541,7 +1541,7 @@ function showLinkTable(lnk_table_div, fid, layer, lnk_table, title) {
 // this should make use of browser caching and decrease load time of the page
 function getMapThumbnail(layer_tablename) {
     var html = '<div class="map_thumbnail">';
-    html = html + '<img src="'+window.params.map.serverURL+'/thumbnails/' + layer_tablename + '_thumb.gif" onerror="this.src = \''+window.params.map.serverURL+'/thumbnails/no_preview.png\'"/>'; 
+    html = html + '<img src="'+window.params.map.serverURL+'/thumbnails/' + layer_tablename + '_thumb.gif" onerror="this.src = \''+window.params.map.serverURL+'/thumbnails/no_preview.gif\'"/>'; 
     //html = html + '<img src="' + getWMS() + '?service=WMS&version=1.1.0&request=GetMap&layers=' + layer_tablename + '&styles=&bbox=' + getLayerBoundingBoxString(layer_tablename) + '&width=80&height=80&srs=EPSG:4326&format=image/gif&FORMAT_OPTIONS=antialias:none&transparent=true"/>'; 
     html = html + '</div>';
 
