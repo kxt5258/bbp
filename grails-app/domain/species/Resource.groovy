@@ -110,7 +110,6 @@ class Resource extends Sourcedata implements Rateable {
 	String thumbnailUrl(String newBaseUrl=null, String defaultFileType=null, ImageType imageType = ImageType.NORMAL) {
 		String thumbnailUrl = '';
         def basePath = '';
-        println "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&" + this?.context?.value();
         if(this?.context?.value() == Resource.ResourceContext.OBSERVATION.toString()) {
             basePath = grailsApplication.config.speciesPortal.observations.serverURL
         } else if(this?.context?.value() == Resource.ResourceContext.SPECIES.toString() || this?.context?.value() == Resource.ResourceContext.SPECIES_FIELD.toString()) {
