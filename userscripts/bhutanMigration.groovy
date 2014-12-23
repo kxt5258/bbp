@@ -76,7 +76,7 @@ def populateUserInContributor1(){
 	def m = [:]
 	def dMap = [:]
 	Contributor.withTransaction {
-		new File("/home/sandeept/bhutan/contributormap.csv").splitEachLine(";") {fields ->
+		new File("/home/kinley/Downloads/contributormap.csv").splitEachLine(";") {fields ->
 			fields = fields.collect {it.trim()}
 			println "data   " + fields
 			def contId = fields[0].trim().toLong()
@@ -110,7 +110,7 @@ def populateSfieldContributor(){
 	println "  populateSfieldContributor >>>>>>>>>>>>>>>>>>>>>>>>>>>> "
 	
 	def dMap = [:]
-	new File("/home/sandeept/bhutan/contributormap.csv").splitEachLine(";") {fields ->
+	new File("/home/kinley/Downloads/contributormap.csv").splitEachLine(";") {fields ->
 		fields = fields.collect {it.trim()}
 		//println "data   " + fields
 		def contId = fields[0].trim().toLong()
