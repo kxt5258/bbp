@@ -12,14 +12,17 @@ class TaxonomyDefinition extends NamesSorucedata {
 	public enum TaxonomyRank  implements org.springframework.context.MessageSourceResolvable {
 		KINGDOM("Kingdom"),
 		PHYLUM("Phylum"),
+		SUB_PHYLUM("Sub-Phylum"),
 		CLASS("Class"),
+		SUB_CLASS("Sub-Class"),
 		ORDER("Order"),
+		SUB_ORDER("Sub-Order"),
 		FAMILY("Family"),
 		SUB_FAMILY("Sub-Family"),
 		GENUS("Genus"),
 		SUB_GENUS("Sub-Genus"),
-		SPECIES("Species");
-
+		SPECIES("Species"),
+		SUB_SPECIES("Sub-Species");
 		private String value;
 
         TaxonomyRank(String value) {
@@ -31,15 +34,19 @@ class TaxonomyDefinition extends NamesSorucedata {
 
         static list() {
             [
-            KINGDOM,
-            PHYLUM,
-            CLASS,
-            ORDER,
-            FAMILY,
-            SUB_FAMILY,
-            GENUS,
-            SUB_GENUS,
-            SPECIES
+	    KINGDOM,
+	    PHYLUM,
+	    SUB_PHYLUM,
+	    CLASS,
+	    SUB_CLASS,
+	    ORDER,
+	    SUB_ORDER,
+	    FAMILY,
+	    SUB_FAMILY,
+	    GENUS,
+	    SUB_GENUS,
+	    SPECIES,
+	    SUB_SPECIES
             ]
         }
 

@@ -152,7 +152,7 @@ println res;
         if(!user) return false;
         boolean flag = false;
         speciesFieldInstance.contributors.each { c ->
-            if(c.id == user.id) {
+	    if(c.id == user.id) {
                 flag = true;
                 return
             }
